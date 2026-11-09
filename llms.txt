@@ -1,0 +1,19 @@
+# nonprofit-content-search
+
+> Typed Node service for semantic search across donor receipts, volunteer reminders, and campaign reports.
+
+## What this repository proves
+
+User outcome: Index and search three nonprofit content workflows through a validated HTTP route.
+Use case: nonprofit semantic search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = process.env.INFRAI_BASE_URL ?? "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/search_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

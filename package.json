@@ -1,0 +1,21 @@
+{
+  "name": "nonprofit-content-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/nonprofit_search_service.ts",
+    "index": "tsx src/index_nonprofit_content.ts",
+    "test": "tsx --test src/search_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^5.20.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
